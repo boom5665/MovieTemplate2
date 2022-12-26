@@ -16,21 +16,21 @@
                     <Nuxt />
                 </b-col>
             </b-row>
-            <!-- <Banner /> -->
+            <Banner />
             <Footer />
             <div class="footer-text">
                 <div class="footer-title">{{ slogan }}</div>
                 <div class="footer-content" v-html="descriptionFooter"></div>
             </div>
         </b-container>
-        <!-- <div class="footer-ads-container" v-show="showAds">
+        <div class="footer-ads-container" v-show="showAds">
             <div class="footer-ads-container" v-show="showAds" v-if="adsBottom.length > 0">
                 <a class="ads-image" :href="value.url" target="_blank" v-for="(value, index) in adsBottom" :key="index" @click="updateAdsImageClick(value)">
                     <nuxt-img :src="value.picture" :alt="value.name" />
                 </a>
                 <div class="close-ads" @click="showAds = false">X</div>
             </div>
-        </div> -->
+        </div>
     </div>
 </template>
 
